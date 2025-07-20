@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Buddy</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Student Buddy</h2>
+  <p class="madeby">Made by Abinaya</p>
+
+  <div class="tabs">
+    <button class="tablink" data-tab="todo">To-Do</button>
+    <button class="tablink" data-tab="notes">Notes</button>
+    <button class="tablink" data-tab="timer">Timer</button>
+    <button class="tablink" data-tab="resources">Resources</button>
+  </div>
+
+  <div id="todo" class="tabcontent">
+    <input type="text" id="taskInput" placeholder="New Task">
+    <button id="addTaskBtn">Add</button>
+    <ul id="taskList"></ul>
+    <p id="taskProgress"></p>
+  </div>
+
+  <div id="notes" class="tabcontent">
+    <textarea id="notesArea" placeholder="Write your notes..."></textarea>
+    <button id="saveNotesBtn">Save Notes</button>
+  </div>
+
+  <div id="timer" class="tabcontent">
+    <p id="timerDisplay">25:00</p>
+    <button id="startTimerBtn">Start</button>
+    <button id="resetTimerBtn">Reset</button>
+  </div>
+
+  <div id="resources" class="tabcontent">
+    <ul>
+      <li><a href="https://classroom.google.com" target="_blank">Google Classroom</a></li>
+      <li><a href="https://drive.google.com" target="_blank">Google Drive</a></li>
+      <li><a href="https://www.youtube.com/playlist?list=PLstudy" target="_blank">Study Playlist</a></li>
+    </ul>
+  </div>
+
+  <p id="quote"></p>
+  <button id="toggleThemeBtn">Toggle Dark Mode</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

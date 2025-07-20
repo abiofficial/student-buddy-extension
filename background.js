@@ -1,0 +1,1 @@
+// Background service worker (future notification features can go here)
